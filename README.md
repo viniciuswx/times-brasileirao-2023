@@ -28,11 +28,6 @@ Possibilidade de alternar o site entre o modo light e dark. Para isso, usei uma 
     --textteam-color: white;
     --bgld-color: tomato;
 }
-
-.light-dark #light:checked {
-    background-color: white;
-    border: 3px solid transparent;
-}
 ```
 
 ## Funcionalidades
