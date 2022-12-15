@@ -8,7 +8,7 @@ Site criado para mostrar os times que estarão no campeonato Brasileiro de 2023.
 
 <p align="center">
   <a href="">
-    <img alt="" src="assets/print-page.jpeg">
+    <img alt="https://viniciuswx.github.io/times-brasileirao-2023/" src="assets/print-page.jpeg">
   </a>
 </p>
 
