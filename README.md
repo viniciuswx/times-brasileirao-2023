@@ -3,6 +3,16 @@
 
 Site criado para mostrar os times que estarão no campeonato Brasileiro de 2023.
 
+
+## Layout
+
+<p align="center">
+  <a href="">
+    <img alt="" src="assets/print-page.jpeg">
+  </a>
+</p>
+
+
 # Diferencial
 
 Possibilidade de alternar o site entre o modo light e dark. Para isso, usei uma pseudo-class chamada :has
@@ -24,15 +34,6 @@ Possibilidade de alternar o site entre o modo light e dark. Para isso, usei uma 
     border: 3px solid transparent;
 }
 ```
-
-## Layout
-
-<p align="center">
-  <a href="">
-    <img alt="" src="assets/print-page.jpeg">
-  </a>
-</p>
-
 
 ## Funcionalidades
 
