@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --bg-color: rgb(35, 35, 35);
+    --text-color: white;
+    --border-color: white;
+    --line-color: white;
+    --bgteam-color: white;
+    --textteam-color: rgb(35, 35, 35);
+    --bgld-color: brown;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    user-select: none;
+
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+header > h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+main .times-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 6rem 0;
+}
+
+.time-info img {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+main .times-wrapper .time,
+main .times-wrapper .time .time-info,
+main .times-wrapper .time .time-competicoes,
+.time-infos,
+.competicoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .times-wrapper .time:hover {
+    transform: rotateZ(-1deg) scale(1.02) translate(0, -10px);
+}
+
+main .times-wrapper .time .time-info {
+    gap: 1.5rem;
+}
+
+main .times-wrapper .time .time-info,
+main .times-wrapper .time .time-competicoes {
+    padding: 1.5rem;
+}
+
+main .times-wrapper .time {
+    border-radius: 20px;
+}
+
+main .times-wrapper .time .time-competicoes {
+    gap: 1.5rem;
+}
+
+main .times-wrapper .time .time-competicoes h2 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+.line-break {
+    width: 100%;
+    height: 3px;
+}
+
+.time-america-mg {
+    border: 3px solid #137343;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-america-mg:hover {
+    background-color: #137343;
+    color: white;
+}
+
+.time-america-mg:hover .line-break {
+    background-color: white;
+}
+
+.time-america-mg .line-break {
+    background-color: #137343;
+}
+
+.time-athletico-pr {
+    border: 3px solid  #d91610;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-athletico-pr:hover {
+    background-color:  #d91610;
+    color: white;
+}
+
+.time-athletico-pr:hover .line-break {
+    background-color: white;
+}
+
+.time-athletico-pr .line-break {
+    background-color:  #d91610;
+}
+
+.time-atletico-mg {
+    border: 3px solid var(--border-color);
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-atletico-mg:hover {
+    background-color: var(--bgteam-color);
+    color: var(--textteam-color);
+}
+
+.time-atletico-mg:hover .line-break {
+    background-color: var(--bg-color);
+}
+
+.time-atletico-mg .line-break {
+    background-color: var(--line-color);
+}
+
+.time-bahia {
+    border: 3px solid #003080;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-bahia:hover {
+    background-color: #003080;
+    color: white;
+}
+
+.time-bahia:hover .line-break {
+    background-color: white;
+}
+
+.time-bahia .line-break {
+    background-color: #003080;
+}
+
+.time-botafogo {
+    border: 3px solid var(--border-color);
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-botafogo:hover {
+    background-color: var(--bgteam-color);
+    color: var(--textteam-color);
+}
+
+.time-botafogo:hover .line-break {
+    background-color: var(--bg-color);
+}
+
+.time-botafogo .line-break {
+    background-color: var(--line-color);
+}
+
+.time-corinthians {
+    border: 3px solid var(--border-color);
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-corinthians:hover {
+    background-color: var(--bgteam-color);
+    color: var(--textteam-color);
+}
+
+.time-corinthians:hover .line-break {
+    background-color: var(--bg-color);
+}
+
+.time-corinthians .line-break {
+    background-color: var(--line-color);
+}
+
+.time-coritiba {
+    border: 3px solid #00554e;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-coritiba:hover {
+    background-color: #00554e;
+    color: white;
+}
+
+.time-coritiba:hover .line-break {
+    background-color: white;
+}
+
+.time-coritiba .line-break {
+    background-color: #00554e;
+}
+
+.time-cruzeiro {
+    border: 3px solid #003b93;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-cruzeiro:hover {
+    background-color: #003b93;
+    color: white;
+}
+
+.time-cruzeiro:hover .line-break {
+    background-color: white;
+}
+
+.time-cruzeiro .line-break {
+    background-color: #003b93;
+}
+
+.time-cuiaba {
+    border: 3px solid #015f09;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-cuiaba:hover {
+    background-color: #015f09;
+    color: white;
+}
+
+.time-cuiaba:hover .line-break {
+    background-color: white;
+}
+
+.time-cuiaba .line-break {
+    background-color: #015f09;
+}
+
+.time-flamengo {
+    border: 3px solid #c3281e;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-flamengo:hover {
+    background-color: #c3281e;
+    color: white;
+}
+
+.time-flamengo:hover .line-break {
+    background-color: white;
+}
+
+.time-flamengo .line-break {
+    background-color: #c3281e;
+}
+
+.time-fluminense {
+    border: 3px solid #9f022f;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-fluminense:hover {
+    background-color: #9f022f;
+    color: white;
+}
+
+.time-fluminense:hover .line-break {
+    background-color: white;
+}
+
+.time-fluminense .line-break {
+    background-color: #9f022f;
+}
+
+.time-fortaleza {
+    border: 3px solid #2b62a3;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-fortaleza:hover {
+    background-color: #2b62a3;
+    color: white;
+}
+
+.time-fortaleza:hover .line-break {
+    background-color: white;
+}
+
+.time-fortaleza .line-break {
+    background-color: #2b62a3;
+}
+
+.time-goias {
+    border: 3px solid #004a16;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-goias:hover {
+    background-color: #004a16;
+    color: white;
+}
+
+.time-goias:hover .line-break {
+    background-color: white;
+}
+
+.time-goias .line-break {
+    background-color: #004a16;
+}
+
+.time-gremio {
+    border: 3px solid #0d80bf;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-gremio:hover {
+    background-color: #0d80bf;
+    color: white;
+}
+
+.time-gremio:hover .line-break {
+    background-color: white;
+}
+
+.time-gremio .line-break {
+    background-color: #0d80bf;
+}
+
+.time-internacional {
+    border: 3px solid #e5050f;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-internacional:hover {
+    background-color: #e5050f;
+    color: white;
+}
+
+.time-internacional:hover .line-break {
+    background-color: white;
+}
+
+.time-internacional .line-break {
+    background-color: #e5050f;
+}
+
+.time-palmeiras {
+    border: 3px solid #006437;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-palmeiras:hover {
+    background-color: #006437;
+    color: white;
+}
+
+.time-palmeiras:hover .line-break {
+    background-color: white;
+}
+
+.time-palmeiras .line-break {
+    background-color: #006437;
+}
+
+.time-bragantino {
+    border: 3px solid #2f3760;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-bragantino:hover {
+    background-color: #2f3760;
+    color: white;
+}
+
+.time-bragantino:hover .line-break {
+    background-color: white;
+}
+
+.time-bragantino .line-break {
+    background-color: #2f3760;
+}
+
+.time-santos {
+    border: 3px solid var(--border-color);
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-santos:hover {
+    background-color: var(--bgteam-color);
+    color: var(--textteam-color);
+}
+
+.time-santos:hover .line-break {
+    background-color: var(--bg-color);
+}
+
+.time-santos .line-break {
+    background-color: var(--line-color);
+}
+
+.time-sao_paulo {
+    border: 3px solid #fe0000;
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-sao_paulo:hover {
+    background-color: #fe0000;
+    color: white;
+}
+
+.time-sao_paulo:hover .line-break {
+    background-color: white;
+}
+
+.time-sao_paulo .line-break {
+    background-color: #fe0000;
+}
+
+.time-vasco {
+    border: 3px solid var(--border-color);
+    transition: all .3s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.time-vasco:hover {
+    background-color: var(--bgteam-color);
+    color: var(--textteam-color);
+}
+
+.time-vasco:hover .line-break {
+    background-color: var(--bg-color);
+}
+
+.time-vasco .line-break {
+    background-color: var(--line-color);
+}
+
+.light-dark {
+    width: 80px;
+    height: 50px;
+    background-color: var(--bgld-color);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.light-dark #light,
+.light-dark #dark {
+    appearance: none;
+    padding: .5rem;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.light-dark #light {
+    border: 3px solid white;
+}
+
+.light-dark #dark {
+    border: 3px solid rgb(35, 35, 35);
+}
+
+.light-dark #light:checked {
+    background-color: white;
+    border: 3px solid transparent;
+}
+
+.light-dark #dark:checked {
+    background-color: rgb(35, 35, 35);
+    border: 3px solid transparent;
+}
+
+#light,
+:root:has(#light:checked) {
+    --bg-color: white;
+    --text-color: rgb(35, 35, 35);
+    --border-color: rgb(35, 35, 35);
+    --line-color: rgb(35, 35, 35);
+    --bgteam-color: rgb(35, 35, 35);
+    --textteam-color: white;
+    --bgld-color: tomato;
+}
+
+.times-wrapper:has(.time:hover) .time:not(:hover) {
+    transform: scale(.98);
+    opacity: .6;
+}
+
+footer {
+    margin-bottom: 3rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--bgld-color);
+}
+
+@media screen and (max-width: 1300px) {
+    main .times-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        margin: 6rem 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    main .times-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin: 6rem 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main .times-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin: 6rem 0;
+    }
+    
+    header > h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header > h1 {
+        font-size: 1.5rem;
+    }
+}
