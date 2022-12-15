@@ -30,6 +30,8 @@ Possibilidade de alternar o site entre o modo light e dark. Para isso, usei uma 
 }
 ```
 
+A funcionalidade é ativada quando chamamos o ":checked" do input radio. Quando chamado, ele usara as cores que foi declarada dentro do bloco de códigos.
+
 ## Funcionalidades
 
 - Temas dark e light
