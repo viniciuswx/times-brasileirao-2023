@@ -9,6 +9,16 @@ Possibilidade de alternar o site entre o modo light e dark. Para isso, usei uma 
 
 - Uso/Exemplo:
 ```css
+:root:has(#light:checked) {
+    --bg-color: white;
+    --text-color: rgb(35, 35, 35);
+    --border-color: rgb(35, 35, 35);
+    --line-color: rgb(35, 35, 35);
+    --bgteam-color: rgb(35, 35, 35);
+    --textteam-color: white;
+    --bgld-color: tomato;
+}
+
 .light-dark #light:checked {
     background-color: white;
     border: 3px solid transparent;
