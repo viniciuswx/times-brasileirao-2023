@@ -69,7 +69,7 @@ main .times-wrapper .time .time-competicoes,
 }
 
 main .times-wrapper .time:hover {
-    transform: rotateZ(-1deg) scale(1.02) translate(0, -10px);
+    transform: scale(1.02) translate(0, -10px);
 }
 
 main .times-wrapper .time .time-info {
