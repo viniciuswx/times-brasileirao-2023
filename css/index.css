@@ -68,9 +68,11 @@ main .times-wrapper .time .time-competicoes,
     align-items: center;
 }
 
+/*
 main .times-wrapper .time:hover {
     transform: scale(1.02) translate(0, -10px);
 }
+*/
 
 main .times-wrapper .time .time-info {
     gap: 1.5rem;
